@@ -1,6 +1,6 @@
 node {
        stage('Git Glone') {
-                    git branch: 'master', url: 'https://github.com/bbRemit/mqprocessor'
+                    git branch: 'master', credentialsId: 'sujan_git', url: 'https://github.com/bbRemit/mqprocessor'
                     echo '----------------------------- CLONE COMPLETED -----------------------------'
             }
 
